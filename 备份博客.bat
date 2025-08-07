@@ -1,4 +1,5 @@
 @echo off
+chcp 65001
 REM === Hugo 博客源码备份脚本 ===
 REM === 将源码（含文章、主题等）备份到 GitHub ===
 

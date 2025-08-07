@@ -1,4 +1,5 @@
 @echo off
+chcp 65001
 REM 自动部署 Hugo 博客到 GitHub Pages
 
 REM 删除旧的 public 文件夹

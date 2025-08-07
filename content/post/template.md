@@ -1,5 +1,5 @@
 ---
-title: "安装 Docker 教程"
+title: "template"
 date: 2025-08-06
 lastmod: 2025-08-07T10:30:00+08:00
 tags: ["docker", "linux"]

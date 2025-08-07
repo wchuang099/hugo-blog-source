@@ -1,4 +1,11 @@
-使用Github Pages+Hugo搭建博客
+---
+title: "hugo使用"
+date: 2025-08-06
+lastmod: 2025-08-07T10:30:00+08:00
+tags: ["docker", "linux"]
+categories: ["Linux"]
+description: "在 Linux 上安装 Docker 的详细教程"
+---
 
 ```
 https://www.elegantcrazy.com/posts/blog/build-blog-with-github-pages-hugo-and-papermod/
