@@ -40,8 +40,8 @@ params:
     favicon: /favicon.ico # 图标文件放入到`static/favicon.ico`
 
     footer:
-        since: 2025
-        customText: 你好，世界！！！
+        since:
+        customText: 
 
     dateFormat:
         published: "2006-01-02"
