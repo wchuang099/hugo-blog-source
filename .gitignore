@@ -4,3 +4,4 @@ resources/
 *.log
 .hugo_build.lock
 desktop.ini
+.idea
