@@ -1,10 +1,10 @@
 ---
 title: "Git使用教程"
 date: 2025-08-07
-lastmod: 2025-08-07T22:30:00+08:00
+lastmod: 2025-08-08T22:30:00+08:00
 tags: ["Git"]
-categories: ["技术"]
-description: "git使用教程"
+categories: ["技术","Git"]
+description: "Git使用技巧"
 ---
 
 # 安装git
