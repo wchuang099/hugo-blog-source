@@ -13,7 +13,7 @@ git remote add origin https://github.com/wchuang099/hugo-blog-source.git
 git branch -M main
 
 REM 先拉取远程最新代码并合并
-git pull origin main --no-rebase
+git pull origin main --no-rebase --no-edit
 
 REM 推送到远程仓库
 git push -u origin main
