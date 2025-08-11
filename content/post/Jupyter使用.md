@@ -1,7 +1,6 @@
 ---
 title: "Jupyter使用"
-date: 2025-08-011
-lastmod: 2025-08-011T21:30:00+08:00
+date: 2025-08-11
 tags: ["Jupyter", "python"]
 categories: ["python"]
 description: "Jupyter 使用入门教程"
