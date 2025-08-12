@@ -2,8 +2,7 @@
 chcp 65001
 
 REM 切换到博客源码目录
-cd /d D:\PyProject\hugo-blog-source
-
+cd /d C:\Users\wchuang\hugo-blog
 REM 删除旧 public
 rmdir /s /q public
 

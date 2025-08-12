@@ -1,9 +1,9 @@
 ---
 title: "Jupyter使用"
 date: 2025-08-11
-tags: ["Jupyter", "python"]
-categories: ["python"]
-description: "Jupyter 使用入门教程"
+tags: ["Jupyter"]
+categories: ["python", "数据分析"]
+description: "Jupyter使用入门教程"
 ---
 
 Jupyter 是一个交互式的计算环境，主要用于写、运行和展示代码（Python、R、Julia 等），非常适合做数据分析、可视化、机器学习实验或者写教程笔记。  
@@ -13,10 +13,9 @@ Jupyter 是一个交互式的计算环境，主要用于写、运行和展示代
 Jupyter 需要 Python 环境
 
 ## 安装Jupyter
-```bash
+```python
 pip install notebook
-Jupyter Notebook  #启动 
-#进入你想工作的文件夹，然后执行
+#进入你想工作的文件夹，然后启动
 jupyter notebook
 ```
 浏览器会自动打开 `http://localhost:8888`
@@ -28,7 +27,7 @@ jupyter notebook
 会出现一个 .ipynb 文件，分为 Cell（单元格）
 
 单元格类型
-```
+```python
 Code：写代码并运行（Shift + Enter 执行）
 Markdown：写文字说明（支持标题、公式、图片）
 Raw：原始文本，不执行
@@ -37,21 +36,27 @@ Raw：原始文本，不执行
   
 
 ## 常用快捷键（命令模式下）
-```
+```shell
 Esc 进入命令模式，Enter 进入编辑模式
 A 在上方插入单元格
 B 在下方插入单元格
-D, D 删除单元格
+DD 删除单元格
 M 把单元格改为 Markdown
 Y 把单元格改为 Code
 Shift + Enter 运行并跳到下一格
+
+在 Jupyter Notebook 里，打开帮助文档的快捷键是：
+按 Shift + Tab，把光标放到函数或对象名后面，按一次 Shift + Tab 会弹出简要帮助提示（参数说明）。
+连续按 Shift + Tab 两次或三次，会展开更详细的文档窗口。
+
+
 ```
 
 ##  进阶技巧
 
 - **可视化示例**
 
-```
+```python
 import matplotlib.pyplot as plt
 x = [1, 2, 3, 4]
 y = [1, 4, 9, 16]
