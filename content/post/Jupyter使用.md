@@ -16,16 +16,11 @@ Jupyter 需要 Python 环境
 pip install notebook
 pip install jupyterlab-language-pack-zh-CN
 jupyter notebook   #进入你想工作的文件夹，然后启动。
-
-另一种启动方式,jupyterlab是jupyter notebook的下一代产品，集成了更多功能
-jupyter lab
-
-
+jupyter lab #这是另一种启动方式,jupyterlab是jupyter notebook的下一代产品，集成了更多功能
 ```
 >浏览器会自动打开 `http://localhost:8888`
 >如果浏览器没自动打开，会在终端看到一个链接，复制到浏览器即可。
 >启动后在Settings--Language-Chinese (Simplified, China)-中文(简体,中国)，进行切换显示语言。
-
 # 基本使用
 ## 创建新 Notebook
 在网页右上角选择 New → Python 3（或其它语言）
