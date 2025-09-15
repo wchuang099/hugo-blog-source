@@ -134,3 +134,63 @@ house()
 > 加一层楼！
 > 一个空的毛坯房，只有墙和门
 > 再加个花园！
+
+## 注册类装饰器
+
+```python
+import PySimpleGUI as sg
+
+"""
+服务注册中心，类似微服务console/Nacos概念
+"""
+
+tasks = {} # 登记本：家务任务 -> 执行函数
+def assign(task_name):
+    """注册装饰器：登记谁负责做哪件家务"""
+    def decorator(func):
+        tasks[task_name] = func
+        print(f"[登记] 家务 '{task_name}' -> {func.__name__} 负责")
+        return func
+    return decorator
+
+"""
+服务提供者
+"""
+# -----------------------------
+# 定义家务（函数定义时自动登记）
+# -----------------------------
+@assign("洗碗")
+def zhangsan():
+    sg.popup("Zhangsan 在洗碗~")
+
+@assign("扫地")
+def lisi():
+    sg.popup("Lisi 在扫地~")
+
+@assign("倒垃圾")
+def wangwu():
+    sg.popup("Wangwu 在倒垃圾~")
+
+"""
+服务消费者
+"""
+# -----------------------------
+# GUI 部分
+# -----------------------------
+layout = [
+    [sg.Text("请选择要执行的家务:")],
+    [sg.Button(task) for task in tasks.keys()],
+    [sg.Button("退出")]
+]
+
+window = sg.Window("家务执行器", layout)
+
+while True:
+    event, values = window.read()
+    if event in (sg.WINDOW_CLOSED, "退出"):
+        break
+    if event in tasks:   # 服务发现
+        tasks[event]()   # 服务消费
+
+window.close()
+```
